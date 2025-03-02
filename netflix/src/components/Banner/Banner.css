@@ -1,37 +1,27 @@
-/* Base Banner Styles */
-.banner {
-  margin-top: -10vh;
-  height: 95vh;
-  margin-bottom: -80px;
-  color: #fff;
-  object-fit: contain;
+.banner{
+    margin-top:-10vh;
+    height:114vh;
+    margin-bottom: -80px;
+    color: white;
+	object-fit: contain;
 }
-
-.banner__buttons {
-  display: flex;
-}
-
 .banner__contents {
-  margin-left: 40px;
-  padding-top: 300px;
+	margin-left: 30px;
+	padding-top: 300px;
 }
-
 .banner__title {
-  font-size: 5rem;
-  font-weight: 900;
-  padding-bottom: 1.5rem;
+	font-size: 3rem;
+	font-weight: 800;
+	padding-bottom: 0.3rem;
 }
-
 .banner__description {
-  width: 60rem;
-  line-height: 1.4;
-  padding: 1rem 0;
-  font-size: 1.1rem;
-  max-width: 400px;
-  height: 80px;
-  font-weight: 300;
+	width: 45rem;
+	line-height: 1;
+	padding: 1rem 0;
+	font-size: 1rem;
+	max-width: 360px;
+	height: 80px;
 }
-
 .banner__button {
   cursor: pointer;
   color: #fff;
@@ -94,95 +84,32 @@
     #111
   );
 }
-
-/* Responsive Styles */
-  @media  (max-width: 768px) {
-  .banner__title {
-    font-size: 3.5rem;
-  }
-  
-  .banner__description {
-    display: none;
-    width: 100%;
-    font-size: 1rem;
-    max-width: 300px;
-    height: auto;
-  }
-
-  .banner__contents {
-    margin-left: 20px;
-    padding-top: 200px;
-  }
-
-  .banner__button {
-    font-size: 1rem;
-    padding: 0.3rem 1rem;
-  }
-
-  .banner {
-    height: 70vh;
-  }
-
-  .banner__fadeBottom {
-    height: 30vh;
-  }
+.banner__fadeBottom {
+	height: 40vh;
+	background-image: linear-gradient(
+		180deg,
+		transparent,
+		rgb(37, 37, 37, 0.91),
+		#111
+	);
 }
-    
-@media (max-width: 480px) {
-  .banner__title {
-    font-size: 2rem;
-  }
 
-  .banner__description {
-    display: none;
-    font-size: 0.9rem;
-    max-width: 250px;
-  }
-
-  .banner__contents {
-    padding-top: 150px;
-    margin-left: 10px;
-  }
-
-  .banner__button {
-    font-size: 0.9rem;
-    padding: 0.2rem 0.8rem;
-  }
-
-  .banner {
-    height: 60vh;
-  }
-
-  .banner__fadeBottom {
-    height: 25vh;
-  }
-};
-@media (max-width: 480px) {
-  .banner__title {
-    font-size: 2rem;
-  }
-
-  .banner__description {
-    display: none;
-    font-size: 0.9rem;
-    max-width: 250px;
-  }
-
-  .banner__contents {
-    padding-top: 150px;
-    margin-left: 10px;
-  }
-
-  .banner__button {
-    font-size: 0.9rem;
-    padding: 0.2rem 0.8rem;
-  }
-
-  .banner {
-    height: 60vh;
-  }
-
-  .banner__fadeBottom {
-    height: 25vh;
-  }
-};
+@media screen and (max-width: 768px){
+	.banner__description {
+		width: 100%;
+		font-size: 12px;
+		margin-left: -5px;
+	}
+	.banner__title {
+		font-size: 2rem;
+		font-weight: 800;
+		padding-bottom: 0.3rem;
+	}
+	.banner__button {
+		font-size: 1rem;
+		font-weight: 700;
+		padding: 1rem 2rem;
+		margin-right: 2rem;
+	}
+	
+}
